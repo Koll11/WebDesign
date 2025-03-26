@@ -1,63 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Meu Portefólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfólio - Marco Santos</title>
 </head>
-<body>
-    <header>
-        <h1>Marco Santos</h1>
-        <a href="https://github.com/Koll11">Github</a>
+<body class="bg-gray-900 text-white p-8">
+
+    <header class="text-center mb-10">
+        <h1 class="text-5xl font-extrabold text-gray-100">Marco Santos</h1>
+        <h2 class="text-2xl text-gray-400 mt-2">Programador de Videojogos</h2>
+        <p class="mt-4 text-lg text-gray-300">Experiência com Unity, Godot e Unreal Engine | C#, GDScript e C++</p>
     </header>
 
-    <main>
-        <section id="sobre">
-            <h2>Sobre Mim:</h2>
-            <p>Este é o meu Portefólio. Sou programador de videojogos</p>
-        </section>
-
-        <section id="projetos">
-            <h2>Projetos:</h2>
-            <article>
-                <h3>CyberEngineer</h3>
-                <img src="Assets/Images/engineer.png" alt="Mark" width="250" height="300">
-                <figcaption>Imagem do personagem de CyberEngineer</figcaption>
-                <p>Feito em Unity2D C#</p>
-            </article>
-            <article>
-                <h3>Lusiada-1 LostSignal</h3>
-                <video width="320" height="240" controls>
+    <section>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-gray-800 p-6 rounded-xl text-center shadow-xl hover:scale-105 transition-transform duration-300">
+                <h3 class="text-lg font-semibold text-gray-200">Lusiada-1 LostSignal</h3>
+                <video class="w-full rounded-lg mt-3" controls>
                     <source src="Assets/Videos/LusiadaVideoRef.mp4" type="video/mp4">
                 </video>
-                <figcaption>Video de Lusiada-1</figcaption>
-                <p>Feito em Unity2D C#</p>
-            </article>
-            <article>
-                <h3>Horizon</h3>
-                <video width="320" height="240" controls>
+                <p class="text-sm text-gray-400 mt-2">Feito em Unity C#</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-xl text-center shadow-xl hover:scale-105 transition-transform duration-300">
+                <h3 class="text-lg font-semibold text-gray-200">Horizon</h3>
+                <video class="w-full rounded-lg mt-3" controls>
                     <source src="Assets/Videos/Horizon.mp4" type="video/mp4">
                 </video>
-                <figcaption>Video de Horizon</figcaption>
-                <p>Feito em Unity2D C#</p>
-            </article>
-            <article>
-                <h3>OceanoParadisiaco</h3>
-                <video width="320" height="240" controls>
+                <p class="text-sm text-gray-400 mt-2">Feito em Unity C#</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-xl text-center shadow-xl hover:scale-105 transition-transform duration-300">
+                <h3 class="text-lg font-semibold text-gray-200">Cyber Engineer</h3>
+                <div class="h-40 flex justify-center">
+                    <img src="Assets/Images/engineer.png" class="h-full w-auto rounded-lg mt-2">
+                </div>
+                <p class="text-sm text-gray-400 mt-2">Feito em Unity C#</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-xl text-center shadow-xl hover:scale-105 transition-transform duration-300">
+                <h3 class="text-lg font-semibold text-gray-200">Oceano Paradisíaco</h3>
+                <video class="w-full rounded-lg mt-3" controls>
                     <source src="Assets/Videos/OceanoParadisiaco.mp4" type="video/mp4">
                 </video>
-                <figcaption>Video de OceanoParadisiaco</figcaption>
-                <p>Feito em Godot Gdscript</p>
-            </article>
-        </section>
-    </main>
+                <p class="text-sm text-gray-400 mt-2">Feito em Godot GDScript</p>
+            </div>
+        </div>
+    </section>
 
-    <footer id="contacto">
-        <h2>Contacto</h2>
-        <p>Email: marco7santos@gmail.com</p>
+    <footer class="mt-12 text-center">
+        <h3 class="text-lg font-semibold text-gray-300">Meu Github:</h3>
+        <a href="https://github.com/Koll11" class="text-gray-400 hover:text-white transition-colors duration-200">Github</a>
     </footer>
 
-    
 </body>
 </html>
