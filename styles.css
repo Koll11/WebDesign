@@ -1,0 +1,112 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #adb5bd;
+    margin-top: 8px;
+}
+
+.description {
+    margin-top: 16px;
+    font-size: 1.2rem;
+    color: #ced4da;
+}
+
+/* Grid de Projetos */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Sempre 3 colunas */
+    gap: 24px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas pequenas */
+    }
+}
+
+/* Cartões */
+.card {
+    background-color: #2d2f34;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    color: #b0b3b8;
+    margin-top: 8px;
+}
+
+/* Vídeos */
+.video {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+/* Imagens */
+.image-container {
+    height: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    max-height: 100%;
+    width: auto;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+/* Rodapé */
+.footer {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #adb5bd;
+}
+
+.footer-link {
+    color: #b0b3b8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
